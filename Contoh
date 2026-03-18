@@ -1,5 +1,5 @@
 local version = LRM_ScriptVersion and "v" .. table.concat(LRM_ScriptVersion:split(""), ".") or "Dev Version"
-local VexoraHub = game:HttpGet("https://raw.githubusercontent.com/dy1zn4t/bmF0dWk-/refs/heads/main/tes.lua")
+local VexoraHub = game:HttpGet("https://raw.githubusercontent.com/kirsiaball-dev/46GhMjd7/refs/heads/main/ui.lua")
 local VexoraHub = loadstring(VexoraHub)()
 local IsOnMobile = table.find({Enum.Platform.Android, Enum.Platform.IOS}, game:GetService("UserInputService"):GetPlatform())
 local WindowSize = IsOnMobile and UDim2.fromOffset(528, 334) or UDim2.fromOffset(620, 370)
@@ -260,6 +260,7 @@ local mdd = Tabs.DropdownTab:Dropdown({
 	Locked = true,
 	Callback = function(option) print("Fruits selected: ", table.concat(option, ", ")) end
 })
+
 Tabs.DropdownTab:Toggle{
 	Title = "Lock switch",
 	Icon = "check",
